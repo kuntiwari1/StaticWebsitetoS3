@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Static Website on AWS S3</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
 
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom {
+      background-color: #fff;
+      color: #007bff;
+      font-weight: bold;
+      border-radius: 50px;
+    }
+
+    .btn-custom:hover {
+      background-color: #f1f1f1;
+      color: #0056b3;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>AWS Made Easy TESTING WEBSITE VERSION 2.O AJAY</h1>
-    </header>
- 
-    <main>
-        <h2>Welcome to AWS Made Easy Version 2</h2>
-        <img src="mylogo.jpg" alt="image1">
-        <p>AWS Made Easy is a channel dedicated to bring quality tutorials with a crisp explaination of the concepts and step by step Hands-on demo.
-            If you are just begining to learn AWS or If you are looking to enhance your AWS Skills to next level or If you are looking for a solution for a particular problem on AWS, This channel caters to everyone.</p>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 AWS Made Easy. All rights reserved.</p>
-    </footer>
+<body>
+  <header>
+    <h1>🚀 Welcome to My Static Website</h1>
+    <p>Hosted securely on <strong>AWS S3</strong> with CI/CD!</p>
+  </header>
+
+  <main>
+    <img src="mylogo.jpg" alt="My Logo" class="img-fluid mb-4" style="max-width: 200px; border-radius: 50%;">
+    <h2>Hello, This is Kunal and Ajay 👋</h2>
+    <p>This site is deployed automatically using GitHub Actions and S3 bucket hosting.</p>
+    <a href="https://github.com/kuntiwari1/StaticWebsitetoS3" target="_blank" class="btn btn-custom mt-3">View My Repo</a>
+  </main>
+
+  <footer>
+    &copy; 2025 Kunal Tiwari & Ajay Kumar Kurni | All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
